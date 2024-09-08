@@ -1,4 +1,4 @@
-from db import db
+from Automated_Testing.REST_api_with_flask.starter_code.db import db
 
 
 class ItemModel(db.Model):

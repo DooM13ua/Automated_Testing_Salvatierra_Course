@@ -1,5 +1,5 @@
-from app import app
-from db import db
+from Automated_Testing.REST_api_with_flask.starter_code.app import app
+from Automated_Testing.REST_api_with_flask.starter_code.db import db
 
 db.init_app(app)
 

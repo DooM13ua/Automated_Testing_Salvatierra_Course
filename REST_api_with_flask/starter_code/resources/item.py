@@ -1,5 +1,5 @@
 from flask_restful import Resource, reqparse
-from models.item import ItemModel
+from Automated_Testing.REST_api_with_flask.starter_code.models.item import ItemModel
 
 
 class Item(Resource):

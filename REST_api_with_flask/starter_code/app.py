@@ -1,9 +1,7 @@
 import os
-
 from flask import Flask
 from flask_restful import Api
-
-from resources.item import Item, ItemList
+from Automated_Testing.REST_api_with_flask.starter_code.resources.item import Item, ItemList
 
 app = Flask(__name__)
 
