@@ -2,6 +2,7 @@ import os
 
 from flask import Flask
 from flask_restful import Api
+from flask_sqlalchemy import SQLAlchemy
 
 from Automated_Testing.REST_api_2.starter_code.resources.item import Item, ItemList
 from Automated_Testing.REST_api_2.starter_code.resources.store import Store, StoreList

@@ -7,14 +7,17 @@ and makes sure that it is a new, blank database each time.
 """
 
 from unittest import TestCase
-from app import app
-from db import db
+from Automated_Testing.REST_api_2.starter_code.app import app
+from Automated_Testing.REST_api_2.starter_code.db import db
 
 
 class BaseTest(TestCase):
     def setUp(self):
         # Make sure database exists
         app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'
+        app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+        app.config['DEBUG'] = False
+
         with app.app_context():
             db.init_app(app)
             db.create_all()

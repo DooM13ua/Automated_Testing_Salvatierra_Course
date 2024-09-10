@@ -1,5 +1,5 @@
 from flask_restful import Resource, reqparse
-from flask_jwt import jwt_required
+from flask_jwt_extended import jwt_required
 from Automated_Testing.REST_api_2.starter_code.models.item import ItemModel
 
 

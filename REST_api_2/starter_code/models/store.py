@@ -6,8 +6,9 @@ class StoreModel(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80))
+    price = db.Column(db.Float(precision=2))
 
-    items = db.relationship('ItemModel', lazy='dynamic')
+    items = db.relationship('ItemModel', lazy='dynamic', back_populates='store')
 
     def __init__(self, name):
         self.name = name
